@@ -6,13 +6,18 @@ int main() {
     InitWindow(screenWidth, screenHeight, "What is this?");
     SetTargetFPS(60);
 
+    Vector2 circlePosition = {
+        (float)screenWidth / 2,
+        (float)screenHeight / 2
+    };
+
     while(!WindowShouldClose()) {
         // Update
 
         // Draw
         BeginDrawing();
             ClearBackground(DARKBLUE);
-            DrawText("Some text", 190, 200, 30, RAYWHITE);
+            DrawCircleV(circlePosition, 100, RAYWHITE);
         EndDrawing();
     }
 
