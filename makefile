@@ -59,7 +59,7 @@ endif
 
 test: $(OBJS)
 	mkdir -p out
-	$(CC) window.cpp $(CFLAGS) $(LDLIBS) -D$(PLATFORM) -o out/test$(EXT)
+	$(CC) main.cpp $(CFLAGS) $(LDLIBS) -D$(PLATFORM) -o out/test$(EXT)
 
 clean:
 	rm -r out/
